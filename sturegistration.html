@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <title>STUDENT REGISTRATION</title>
+        <!-- linking css file -->
+        <link rel="stylesheet" href="sturegistrationstyle.css">
+    </head>
+    <body>
+
+        <!-- <h3>Academic Details</h3> -->
+        <section class="formbox">
+        <div class="regiscontainer">
+            <div class="regisheader">
+                <h2>Student Registration</h2>
+            </div>
+
+        <form action="http://127.0.0.1:8000/insedu" method="post"  class="stuform">
+            <div class="details">
+                <h2>Academic Details</h2>
+            </div>
+            <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stuid.gif" width="50px" height="50px"/>
+                </div>
+                <label>Registration No.</label>
+            <input  type="text" size="10" name="sturegno" value="21761A0590" id="sname"  required autofocus placeholder="Enter Student Registration No.">
+            </div>
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stupwd.gif" width="50px" height="50px"/>
+                </div>
+                <label>Password</label>
+            <input type="password" size="15" name="stupwd" value="21761A0599" id="spwd"  required placeholder="Enter Student Password">
+            </div> -->
+            <!-- <input type="file"/> -->
+            <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stujoindate.gif" width="50px" height="50px"/>
+                </div>
+                <label>Joining Date</label>
+            <input type="date"  name="stujoindate" required value="2021-11-09">
+            </div>
+            <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stubranch.gif" width="50px" height="50px"/>
+                </div>
+                <label>Branch</label>
+            <select name="branch" required>
+                <option value="CSE">CSE</option>
+                <option value="CSM">CSM</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="MECH">MECH</option>
+                <option value="CYBER">CYBER SECURITY</option>
+            </select>
+            </div>
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stujoinyear.gif" width="50px" height="50px"/>
+                </div>
+                <label>Joining Year</label>
+            <select name="stuyear">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </div> -->
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stuexam.gif" width="50px" height="60px"/>
+                </div>
+                <label>Joining Sem</label>
+            <select name="stusem">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            </div> -->
+
+            <!-- <input type="date" size="50" name="acadyear" placeholder="Enter Student Academic Year"> -->
+            <!-- <h3>Personal Details</h3> -->
+            <div class="details">
+                <h2>Student Details</h2>
+            </div>
+            <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stuname.gif" width="50px" height="50px"/>
+                </div>
+                <label>Student Name</label>
+            <input type="text" size="15" name="stuname" value="ganesh"  required  placeholder="Enter Student Name">
+            </div>
+
+            <div class="fie">
+                <div class="regicons">
+                    <img src="codeimages/stugender.gif"  width="50px" height="50px"/>
+                </div>
+                <label>Student Gender</label>
+                <div class="radi">
+            <input type="radio" name="stugender" value="male" required checked/>Male
+            <input type="radio" name="stugender" value="female" required />Female
+        </div>
+            </div>
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/studob.gif" width="50px" height="50px"/>
+                </div>
+                <label>Student DOB</label>
+            <input type="date"  name="studob"  value="2004-06-07"required  placeholder="Enter Student Dob">
+            </div> -->
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stumother.gif" width="50px" height="50px"/>
+                </div>
+                <label>Student Mother name</label>
+            <input type="text" size="15" name="stumothername" value="obul mother" required placeholder="Enter Student Mother Name">
+            </div> -->
+<!--
+            <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stufather.gif" width="50px" height="50px"/>
+                </div>
+                <label>Student Father Name</label>
+            <input type="text" size="15" name="stufathername" value="obul fath" required placeholder="Enter Student Father Name">
+            </div> -->
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stuaddress.gif" width="50px" height="50px"/>
+                </div>
+                <label>Student Address</label>
+            <input type="text" size="25" name="stuaddress" value="vizianagaram" required placeholder="Enter Student Address">
+            </div> -->
+
+            <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stumob.gif" width="50px" height="50px"/>
+                </div>
+                <label>Student Mobile No.</label>
+            <input type="tel" size="10" name="stumobile"  value="7386878066" required placeholder="Enter Student Mobile">
+            </div>
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/partel.gif"  width="50px" height="50px"/>
+                </div>
+                <label>Parent Mobile No.</label>
+            <input type="tel" size="10" name="stuparmobile" value="9490944365" required placeholder="Enter Parent Mobile">
+            </div> -->
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/Aadhaar.gif" width="50px" height="50px"/>
+                </div>
+                <label>Studet Aadhar</label>
+            <input type="text" size="11" name="stuaadhar" value="7386878066" required placeholder="Enter Student Aadhar">
+            </div> -->
+
+            <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stuemail.gif" width="50px" height="50px"/>
+                </div>
+                <label>Student Email</label>
+            <input type="email" size="25" name="stuemail" value="ganesh@gmail.com" required placeholder="Enter Student Email">
+            </div>
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stueamcetres.gif" width="50px" height="50px"/>
+                </div>
+                <label>Eamcet Hallticket</label>
+            <input type="text" size="15" name="stueamcetht" value="509880300" required  placeholder="Enter Student Eamcet Hallticket No.">
+            </div> -->
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stueamcet.gif" width="50px" height="50px"/>
+                </div>
+                <label>Eamcet Rank</label>
+            <input type="text" size="15" name="stueamcetrank" value="123" required  placeholder="Enter Student Eamcet Rank">
+            </div> -->
+
+            <!-- <div class="field">
+                <div class="regicons">
+                    <img src="codeimages/stuinterclg.gif" width="50px" height="50px"/>
+                </div>
+                <label>Student Inter Clg Name</label>
+            <input type="text" size="15" name="stuinterclg"  value="siddhartha ongole" required  placeholder="Enter Student Inter Clg Name">
+            </div> -->
+
+            <input type="submit" class="button1" value="Register">
+            <input type="reset" class="button2" value="cancel">
+
+            <button onclick="window.print()" class="printpdf">print</button>
+        </form>
+    </div>
+    </section>
+    </body>
+</html>
